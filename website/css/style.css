@@ -1,0 +1,51 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #E9EFFF;
+}
+
+h1, h2, h3, h4, h5, p {
+	color: #2F4E75;
+}
+
+.customCard {
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: 0 14px 28px #cbd8fd, 0 10px 10px #cbd8fd;
+	margin: 10px;
+	margin-top: 20px;
+	transition: all 0.4s;
+}
+.customCard:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+	transition: all 0.4s;
+}
+.customCard h3 {
+	color: #5751FF;
+	text-align: center;
+	font-size: 50px;
+	padding: 30px;
+	padding-bottom: 10px;
+}
+.customCard h5 {
+	color: gray;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.customChart h2 {
+	padding: 30px;
+	text-align: center;
+}
+canvas {
+	padding: 0px 10px 0px 10px ;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	border-radius: 100px;
+	background-color: #5751FF;
+	box-shadow: 0 14px 28px #cbd8fd, 0 10px 10px #cbd8fd;
+}
