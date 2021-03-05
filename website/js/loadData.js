@@ -3,22 +3,6 @@ function formatNumber(num) {
 	return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
 }
 
-function animateValue(id, start, end, duration) {
-	const obj = document.getElementById(id);
-  
-	let startTimestamp = null;
-
-	const step = (timestamp) => {
-	  if (!startTimestamp) startTimestamp = timestamp;
-	  const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-	  obj.innerHTML = Math.floor(progress * (end - start) + start);
-	  if (progress < 1) {
-		window.requestAnimationFrame(step);
-	  }
-	};
-
-	window.requestAnimationFrame(step);
-}
   
 
 $.getJSON("https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-json/dpc-covid19-ita-andamento-nazionale-latest.json")
@@ -27,7 +11,6 @@ $.getJSON("https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-json/d
 
 	document.getElementById("dateUpdate").innerHTML = String(data["data"]).replace("T", " ")
 
-	//animateValue("positivi", 0, formatNumber(parseFloat(data["totale_positivi"])), 1);
 
 	document.getElementById("positivi").innerHTML = formatNumber(parseFloat(data["totale_positivi"]));
 	document.getElementById("guariti").innerHTML = formatNumber(parseFloat(data["dimessi_guariti"]));
