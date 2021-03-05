@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CF7093E2259790F8001544BF"
-               BuildableName = "COVID Italia WidgetExtension.appex"
-               BlueprintName = "COVID Italia WidgetExtension"
-               ReferencedContainer = "container:COVID Italia.xcodeproj">
+               BuildableName = "COVID-IT WidgetExtension.appex"
+               BlueprintName = "COVID-IT WidgetExtension"
+               ReferencedContainer = "container:COVID-IT.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CF1CFBA12595C585009A3FBB"
-               BuildableName = "COVID Italia.app"
-               BlueprintName = "COVID Italia"
-               ReferencedContainer = "container:COVID Italia.xcodeproj">
+               BuildableName = "COVID-IT.app"
+               BlueprintName = "COVID-IT"
+               ReferencedContainer = "container:COVID-IT.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CF1CFBA12595C585009A3FBB"
-            BuildableName = "COVID Italia.app"
-            BlueprintName = "COVID Italia"
-            ReferencedContainer = "container:COVID Italia.xcodeproj">
+            BuildableName = "COVID-IT.app"
+            BlueprintName = "COVID-IT"
+            ReferencedContainer = "container:COVID-IT.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -97,9 +97,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CF1CFBA12595C585009A3FBB"
-            BuildableName = "COVID Italia.app"
-            BlueprintName = "COVID Italia"
-            ReferencedContainer = "container:COVID Italia.xcodeproj">
+            BuildableName = "COVID-IT.app"
+            BlueprintName = "COVID-IT"
+            ReferencedContainer = "container:COVID-IT.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

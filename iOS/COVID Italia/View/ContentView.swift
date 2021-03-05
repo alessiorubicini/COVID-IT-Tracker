@@ -31,14 +31,6 @@ struct ContentView: View {
                     Image(systemName: "eyedropper")
                 }
             
-            NewsView(news: $dataModel.news)
-                .tabItem {
-                    Text("Notizie")
-                    Image(systemName: "newspaper.fill")
-                }
-                .onAppear {
-                    dataModel.loadNews()
-                }
             
         }.onAppear {
             //dataModel.loadNationalData()

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CF05A1382599E79800B6FEB2 /* RegionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF05A1372599E79800B6FEB2 /* RegionCard.swift */; };
-		CF1CFBA62595C585009A3FBB /* COVID_ItaliaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CFBA52595C585009A3FBB /* COVID_ItaliaApp.swift */; };
+		CF1CFBA62595C585009A3FBB /* COVID_ITApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CFBA52595C585009A3FBB /* COVID_ITApp.swift */; };
 		CF1CFBA82595C585009A3FBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CFBA72595C585009A3FBB /* ContentView.swift */; };
 		CF1CFBAA2595C585009A3FBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1CFBA92595C585009A3FBB /* Assets.xcassets */; };
 		CF1CFBAD2595C585009A3FBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1CFBAC2595C585009A3FBB /* Preview Assets.xcassets */; };
@@ -19,19 +19,14 @@
 		CF46AE2D2595D684002A1DB4 /* RegionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46AE2C2595D684002A1DB4 /* RegionData.swift */; };
 		CF46AE322595D967002A1DB4 /* RegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46AE312595D967002A1DB4 /* RegionView.swift */; };
 		CF46AE362595DA8B002A1DB4 /* NationalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46AE352595DA8B002A1DB4 /* NationalData.swift */; };
-		CF46AE3A2595EA8C002A1DB4 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46AE392595EA8C002A1DB4 /* News.swift */; };
-		CF46AE3D2595EAEE002A1DB4 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46AE3C2595EAEE002A1DB4 /* NewsView.swift */; };
-		CF46AE422595EB51002A1DB4 /* NewsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46AE412595EB51002A1DB4 /* NewsRow.swift */; };
-		CF6323D325974F1C00AD92B0 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = CF6323D225974F1C00AD92B0 /* SwiftUICharts */; };
 		CF7093E4259790F8001544BF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7093AF25979047001544BF /* WidgetKit.framework */; };
 		CF7093E5259790F8001544BF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7093B125979047001544BF /* SwiftUI.framework */; };
 		CF7093E8259790F8001544BF /* COVID_Italia_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7093E7259790F8001544BF /* COVID_Italia_Widget.swift */; };
 		CF7093EA259790F8001544BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7093E9259790F8001544BF /* Assets.xcassets */; };
-		CF7093EE259790F8001544BF /* COVID Italia WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF7093E3259790F8001544BF /* COVID Italia WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CF7093EE259790F8001544BF /* COVID-IT WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF7093E3259790F8001544BF /* COVID-IT WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CF7093F625979107001544BF /* SmallWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7093F525979107001544BF /* SmallWidget.swift */; };
 		CF7093FA25979110001544BF /* MediumWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7093F925979110001544BF /* MediumWidget.swift */; };
 		CF7093FD25979116001544BF /* RegionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46AE2C2595D684002A1DB4 /* RegionData.swift */; };
-		CF7093FE25979116001544BF /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46AE392595EA8C002A1DB4 /* News.swift */; };
 		CF7093FF25979116001544BF /* NationalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46AE352595DA8B002A1DB4 /* NationalData.swift */; };
 		CF70940025979116001544BF /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46AE252595CA37002A1DB4 /* DataModel.swift */; };
 		CF70940325979321001544BF /* SmallWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7093F525979107001544BF /* SmallWidget.swift */; };
@@ -66,7 +61,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				CF7093EE259790F8001544BF /* COVID Italia WidgetExtension.appex in Embed App Extensions */,
+				CF7093EE259790F8001544BF /* COVID-IT WidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,25 +70,22 @@
 
 /* Begin PBXFileReference section */
 		CF05A1372599E79800B6FEB2 /* RegionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionCard.swift; sourceTree = "<group>"; };
-		CF1CFBA22595C585009A3FBB /* COVID Italia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COVID Italia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF1CFBA52595C585009A3FBB /* COVID_ItaliaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVID_ItaliaApp.swift; sourceTree = "<group>"; };
+		CF1CFBA22595C585009A3FBB /* COVID-IT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COVID-IT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1CFBA52595C585009A3FBB /* COVID_ITApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVID_ITApp.swift; sourceTree = "<group>"; };
 		CF1CFBA72595C585009A3FBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		CF1CFBA92595C585009A3FBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF1CFBA92595C585009A3FBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "COVID Italia/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		CF1CFBAC2595C585009A3FBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CF1CFBAE2595C585009A3FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF1CFBAE2595C585009A3FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "COVID Italia/Info.plist"; sourceTree = SOURCE_ROOT; };
 		CF46AE152595C62E002A1DB4 /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
 		CF46AE1D2595C7F0002A1DB4 /* Overview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overview.swift; sourceTree = "<group>"; };
 		CF46AE202595C87C002A1DB4 /* RegionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsView.swift; sourceTree = "<group>"; };
-		CF46AE252595CA37002A1DB4 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		CF46AE252595CA37002A1DB4 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataModel.swift; path = "COVID Italia/Logic/DataModel.swift"; sourceTree = SOURCE_ROOT; };
 		CF46AE2C2595D684002A1DB4 /* RegionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionData.swift; sourceTree = "<group>"; };
 		CF46AE312595D967002A1DB4 /* RegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionView.swift; sourceTree = "<group>"; };
 		CF46AE352595DA8B002A1DB4 /* NationalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalData.swift; sourceTree = "<group>"; };
-		CF46AE392595EA8C002A1DB4 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
-		CF46AE3C2595EAEE002A1DB4 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
-		CF46AE412595EB51002A1DB4 /* NewsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRow.swift; sourceTree = "<group>"; };
 		CF7093AF25979047001544BF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		CF7093B125979047001544BF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		CF7093E3259790F8001544BF /* COVID Italia WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "COVID Italia WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7093E3259790F8001544BF /* COVID-IT WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "COVID-IT WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7093E7259790F8001544BF /* COVID_Italia_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVID_Italia_Widget.swift; sourceTree = "<group>"; };
 		CF7093E9259790F8001544BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF7093EB259790F8001544BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,7 +93,7 @@
 		CF7093F925979110001544BF /* MediumWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidget.swift; sourceTree = "<group>"; };
 		CFCFC32925B2D97800C93096 /* VaccinesDataCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinesDataCard.swift; sourceTree = "<group>"; };
 		CFE59DA4259C663200F8C194 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		CFE59DA8259C672000F8C194 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		CFE59DA8259C672000F8C194 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = API.swift; path = "COVID Italia/Logic/API.swift"; sourceTree = SOURCE_ROOT; };
 		CFE6DC9125979AF70078CE49 /* LargeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidget.swift; sourceTree = "<group>"; };
 		CFF489B425A5C24000952046 /* VaccinesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinesData.swift; sourceTree = "<group>"; };
 		CFF489BE25A5C4D600952046 /* VaccinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinesView.swift; sourceTree = "<group>"; };
@@ -112,7 +104,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF6323D325974F1C00AD92B0 /* SwiftUICharts in Frameworks */,
 				CFCFC32F25B2DB3500C93096 /* VisualEffects in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,7 +123,7 @@
 		CF1CFB992595C585009A3FBB = {
 			isa = PBXGroup;
 			children = (
-				CF1CFBA52595C585009A3FBB /* COVID_ItaliaApp.swift */,
+				CF1CFBA52595C585009A3FBB /* COVID_ITApp.swift */,
 				CFE59DA4259C663200F8C194 /* README.md */,
 				CF1CFBA42595C585009A3FBB /* COVID Italia */,
 				CF7093E6259790F8001544BF /* COVID Italia Widget */,
@@ -144,8 +135,8 @@
 		CF1CFBA32595C585009A3FBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CF1CFBA22595C585009A3FBB /* COVID Italia.app */,
-				CF7093E3259790F8001544BF /* COVID Italia WidgetExtension.appex */,
+				CF1CFBA22595C585009A3FBB /* COVID-IT.app */,
+				CF7093E3259790F8001544BF /* COVID-IT WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,10 +144,11 @@
 		CF1CFBA42595C585009A3FBB /* COVID Italia */ = {
 			isa = PBXGroup;
 			children = (
-				CF46AE1B2595C6B6002A1DB4 /* Model */,
-				CF1CFBB52595C599009A3FBB /* View */,
 				CF1CFBA92595C585009A3FBB /* Assets.xcassets */,
 				CF1CFBAE2595C585009A3FBB /* Info.plist */,
+				CF9EC1F925F2ABDF00B6EE8B /* Logic */,
+				CF46AE1B2595C6B6002A1DB4 /* Model */,
+				CF1CFBB52595C599009A3FBB /* View */,
 				CF1CFBAB2595C585009A3FBB /* Preview Content */,
 			);
 			path = "COVID Italia";
@@ -177,7 +169,6 @@
 				CF46AE452595F728002A1DB4 /* OverView */,
 				CFF489BD25A5C4CB00952046 /* Vaccines */,
 				CFD571BF2599E25600AC0F4F /* Regions */,
-				CF46AE462595F744002A1DB4 /* News */,
 				CF46AE142595C624002A1DB4 /* Elements */,
 			);
 			path = View;
@@ -194,11 +185,8 @@
 		CF46AE1B2595C6B6002A1DB4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CFE59DA8259C672000F8C194 /* API.swift */,
-				CF46AE252595CA37002A1DB4 /* DataModel.swift */,
 				CF46AE352595DA8B002A1DB4 /* NationalData.swift */,
 				CF46AE2C2595D684002A1DB4 /* RegionData.swift */,
-				CF46AE392595EA8C002A1DB4 /* News.swift */,
 				CFF489B425A5C24000952046 /* VaccinesData.swift */,
 			);
 			path = Model;
@@ -210,15 +198,6 @@
 				CF46AE1D2595C7F0002A1DB4 /* Overview.swift */,
 			);
 			path = OverView;
-			sourceTree = "<group>";
-		};
-		CF46AE462595F744002A1DB4 /* News */ = {
-			isa = PBXGroup;
-			children = (
-				CF46AE3C2595EAEE002A1DB4 /* NewsView.swift */,
-				CF46AE412595EB51002A1DB4 /* NewsRow.swift */,
-			);
-			path = News;
 			sourceTree = "<group>";
 		};
 		CF7093A82597902D001544BF /* Widget Views */ = {
@@ -251,6 +230,15 @@
 			path = "COVID Italia Widget";
 			sourceTree = "<group>";
 		};
+		CF9EC1F925F2ABDF00B6EE8B /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				CF46AE252595CA37002A1DB4 /* DataModel.swift */,
+				CFE59DA8259C672000F8C194 /* API.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
 		CFD571BF2599E25600AC0F4F /* Regions */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,9 +261,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CF1CFBA12595C585009A3FBB /* COVID Italia */ = {
+		CF1CFBA12595C585009A3FBB /* COVID-IT */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CF1CFBB12595C585009A3FBB /* Build configuration list for PBXNativeTarget "COVID Italia" */;
+			buildConfigurationList = CF1CFBB12595C585009A3FBB /* Build configuration list for PBXNativeTarget "COVID-IT" */;
 			buildPhases = (
 				CF1CFB9E2595C585009A3FBB /* Sources */,
 				CF1CFB9F2595C585009A3FBB /* Frameworks */,
@@ -287,18 +275,17 @@
 			dependencies = (
 				CF7093ED259790F8001544BF /* PBXTargetDependency */,
 			);
-			name = "COVID Italia";
+			name = "COVID-IT";
 			packageProductDependencies = (
-				CF6323D225974F1C00AD92B0 /* SwiftUICharts */,
 				CFCFC32E25B2DB3500C93096 /* VisualEffects */,
 			);
 			productName = "COVID Italia";
-			productReference = CF1CFBA22595C585009A3FBB /* COVID Italia.app */;
+			productReference = CF1CFBA22595C585009A3FBB /* COVID-IT.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CF7093E2259790F8001544BF /* COVID Italia WidgetExtension */ = {
+		CF7093E2259790F8001544BF /* COVID-IT WidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CF7093EF259790F8001544BF /* Build configuration list for PBXNativeTarget "COVID Italia WidgetExtension" */;
+			buildConfigurationList = CF7093EF259790F8001544BF /* Build configuration list for PBXNativeTarget "COVID-IT WidgetExtension" */;
 			buildPhases = (
 				CF7093DF259790F8001544BF /* Sources */,
 				CF7093E0259790F8001544BF /* Frameworks */,
@@ -308,9 +295,9 @@
 			);
 			dependencies = (
 			);
-			name = "COVID Italia WidgetExtension";
+			name = "COVID-IT WidgetExtension";
 			productName = "COVID Italia WidgetExtension";
-			productReference = CF7093E3259790F8001544BF /* COVID Italia WidgetExtension.appex */;
+			productReference = CF7093E3259790F8001544BF /* COVID-IT WidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -330,7 +317,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CF1CFB9D2595C585009A3FBB /* Build configuration list for PBXProject "COVID Italia" */;
+			buildConfigurationList = CF1CFB9D2595C585009A3FBB /* Build configuration list for PBXProject "COVID-IT" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -347,8 +334,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CF1CFBA12595C585009A3FBB /* COVID Italia */,
-				CF7093E2259790F8001544BF /* COVID Italia WidgetExtension */,
+				CF1CFBA12595C585009A3FBB /* COVID-IT */,
+				CF7093E2259790F8001544BF /* COVID-IT WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -386,19 +373,16 @@
 				CF46AE1E2595C7F0002A1DB4 /* Overview.swift in Sources */,
 				CF1CFBA82595C585009A3FBB /* ContentView.swift in Sources */,
 				CFE6DC9225979AF70078CE49 /* LargeWidget.swift in Sources */,
-				CF46AE422595EB51002A1DB4 /* NewsRow.swift in Sources */,
 				CF46AE162595C62E002A1DB4 /* InfoRow.swift in Sources */,
 				CF05A1382599E79800B6FEB2 /* RegionCard.swift in Sources */,
 				CF7093F625979107001544BF /* SmallWidget.swift in Sources */,
 				CF46AE2D2595D684002A1DB4 /* RegionData.swift in Sources */,
-				CF46AE3A2595EA8C002A1DB4 /* News.swift in Sources */,
 				CF46AE322595D967002A1DB4 /* RegionView.swift in Sources */,
 				CF46AE362595DA8B002A1DB4 /* NationalData.swift in Sources */,
 				CFF489BF25A5C4D600952046 /* VaccinesView.swift in Sources */,
-				CF46AE3D2595EAEE002A1DB4 /* NewsView.swift in Sources */,
 				CFCFC32A25B2D97800C93096 /* VaccinesDataCard.swift in Sources */,
 				CFE59DA9259C672000F8C194 /* API.swift in Sources */,
-				CF1CFBA62595C585009A3FBB /* COVID_ItaliaApp.swift in Sources */,
+				CF1CFBA62595C585009A3FBB /* COVID_ITApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +391,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF70940025979116001544BF /* DataModel.swift in Sources */,
-				CF7093FE25979116001544BF /* News.swift in Sources */,
 				CFE6DC9A25979B670078CE49 /* MediumWidget.swift in Sources */,
 				CFE6DC9925979B670078CE49 /* LargeWidget.swift in Sources */,
 				CFE59DAE259C69F400F8C194 /* API.swift in Sources */,
@@ -425,7 +408,7 @@
 /* Begin PBXTargetDependency section */
 		CF7093ED259790F8001544BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CF7093E2259790F8001544BF /* COVID Italia WidgetExtension */;
+			target = CF7093E2259790F8001544BF /* COVID-IT WidgetExtension */;
 			targetProxy = CF7093EC259790F8001544BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -640,7 +623,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CF1CFB9D2595C585009A3FBB /* Build configuration list for PBXProject "COVID Italia" */ = {
+		CF1CFB9D2595C585009A3FBB /* Build configuration list for PBXProject "COVID-IT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF1CFBAF2595C585009A3FBB /* Debug */,
@@ -649,7 +632,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF1CFBB12595C585009A3FBB /* Build configuration list for PBXNativeTarget "COVID Italia" */ = {
+		CF1CFBB12595C585009A3FBB /* Build configuration list for PBXNativeTarget "COVID-IT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF1CFBB22595C585009A3FBB /* Debug */,
@@ -658,7 +641,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF7093EF259790F8001544BF /* Build configuration list for PBXNativeTarget "COVID Italia WidgetExtension" */ = {
+		CF7093EF259790F8001544BF /* Build configuration list for PBXNativeTarget "COVID-IT WidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF7093F0259790F8001544BF /* Debug */,
@@ -689,11 +672,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CF6323D225974F1C00AD92B0 /* SwiftUICharts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CF6323D125974F1C00AD92B0 /* XCRemoteSwiftPackageReference "ChartView" */;
-			productName = SwiftUICharts;
-		};
 		CFCFC32E25B2DB3500C93096 /* VisualEffects */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CFCFC32D25B2DB3500C93096 /* XCRemoteSwiftPackageReference "VisualEffects" */;

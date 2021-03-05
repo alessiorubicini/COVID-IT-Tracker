@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CF1CFBA12595C585009A3FBB"
-               BuildableName = "COVID Italia.app"
-               BlueprintName = "COVID Italia"
-               ReferencedContainer = "container:COVID Italia.xcodeproj">
+               BuildableName = "COVID-IT.app"
+               BlueprintName = "COVID-IT"
+               ReferencedContainer = "container:COVID-IT.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CF1CFBA12595C585009A3FBB"
-            BuildableName = "COVID Italia.app"
-            BlueprintName = "COVID Italia"
-            ReferencedContainer = "container:COVID Italia.xcodeproj">
+            BuildableName = "COVID-IT.app"
+            BlueprintName = "COVID-IT"
+            ReferencedContainer = "container:COVID-IT.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CF1CFBA12595C585009A3FBB"
-            BuildableName = "COVID Italia.app"
-            BlueprintName = "COVID Italia"
-            ReferencedContainer = "container:COVID Italia.xcodeproj">
+            BuildableName = "COVID-IT.app"
+            BlueprintName = "COVID-IT"
+            ReferencedContainer = "container:COVID-IT.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

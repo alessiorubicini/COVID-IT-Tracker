@@ -12,7 +12,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<meta property="og:title" content="COVID Italy Tracker"/>
+	<meta property="og:url" content="http://alessiorubicini.altervista.org/COVID-Tracker/index.php" />
+	<meta property="og:description" content="Un sito web per tracciare gli ultimi numeri e provvedimenti sul COVID-19 in Italia" />
 	<meta property="og:image" content="images/ogimage.png"/>
 	
 	<link rel="icon" href="images/covid-icon.png">

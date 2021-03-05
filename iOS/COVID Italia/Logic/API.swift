@@ -15,7 +15,6 @@ class API {
     
     private let regionsURL: URL = URL(string: "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-json/dpc-covid19-ita-regioni-latest.json")!
     private let nationalURL: URL = URL(string: "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-json/dpc-covid19-ita-andamento-nazionale-latest.json")!
-    private let newsURL = URL(string: "https://newsapi.org/v2/top-headlines?" + "q=covid&" + "country=it&" + "apiKey=" + "954521a497c943429c100276965eddd0")!
     private let vaccinesURL = URL(string: "https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/master/dati/anagrafica-vaccini-summary-latest.json")!
     
     func nationalData(completion: @escaping (Result<NationalData, Error>) -> Void ) {
@@ -56,43 +55,6 @@ class API {
             }
         }.resume()
 
-    }
-    
-    
-    
-    func lastNews(completion: @escaping (News) -> Void) {
-        
-        var request = URLRequest(url: newsURL)
-        request.httpMethod = "GET"
-
-        // Perform HTTP Request
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-                
-                // Check for Error
-                if let error = error {
-                    print("Error took place \(error)")
-                    return
-                }
-         
-                // Convert HTTP Response Data to a String
-                if let data = data {
-                    do {
-                        
-                        let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
-                        let articles = json["articles"] as! [Any]
-                        print(articles)
-                        
-                        _ = articles.map({ completion(News(dict: $0 as! [String:Any])) })
-                        
-                        
-                    } catch {
-                        
-                    }
-                    
-                }
-        }
-        task.resume()
-        
     }
     
     func vaccines(completion: @escaping (VaccinesData) -> Void) {

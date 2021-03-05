@@ -15,7 +15,6 @@ class DataModel: ObservableObject {
     
     @Published var nationalData: NationalData? = nil
     @Published var regionsData: [RegionData] = []
-    @Published var news: [News] = []
     @Published var trend: [NationalData] = []
     @Published var vaccines: [VaccinesData] = []
     
@@ -55,17 +54,6 @@ class DataModel: ObservableObject {
         }
     }
     
-    func loadNews() {
-        news = []
-        
-        // Call API
-        api.lastNews() { article in
-            DispatchQueue.main.async {
-                self.news.append(article)
-            }
-        }
-        
-    }
     
     func loadVaccinesData() {
         api.vaccines { data in
