@@ -1,7 +1,7 @@
 
 google.charts.load('current', {
     'packages':['geochart'],
-    'mapsApiKey': 'AIzaSyB8xsqazIL6sVtJvTg5g-5gUtF4d_P5f54'
+    'mapsApiKey': config.googleApiKey
 });
 
 google.charts.setOnLoadCallback(drawRegionsMap);

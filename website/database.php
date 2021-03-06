@@ -11,9 +11,9 @@
 	class Database {
 		public $conn;
 		public $host = "localhost";
-		public $username = "alessiorubicini";
-		public $password = "";
-		public $database = "my_alessiorubicini";
+		public $username = "root";
+		public $password = "root";
+		public $database = "covid_tracker";
 
 		function __construct() {
 			$this->conn = mysqli_connect($this->host, $this->username, $this->password, $this->database) or die('Impossibile connettersi al database');
