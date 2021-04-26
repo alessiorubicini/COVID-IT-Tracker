@@ -1,10 +1,3 @@
-<?php
-	ini_set('display_errors', '1');
-	ini_set('display_startup_errors', '1');
-	error_reporting(E_ALL);
-	require_once('database.php');
-?>
-
 <!DOCTYPE html>
 <html lang="it">
 
@@ -18,7 +11,7 @@
 	<meta property="og:description" content="Un sito web per tracciare gli ultimi numeri e provvedimenti sul COVID-19 in Italia" />
 	<meta property="og:image" content="images/ogimage.png"/>
 	
-	<link rel="icon" href="images/covid-icon.png">
+	<link rel="icon" href="images/icon.png">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/footer.css">
 
@@ -36,7 +29,7 @@
 
 			<div class="row">
 				<div class="col-sm-1">
-					<img class="mx-auto d-block" src="images/covid-icon.png" width="70" height="70">
+					<img class="mx-auto d-block" src="images/icon.png" width="70" height="auto">
 				</div>
 				<div class="col-sm-11">
 					<h2>COVID-IT tracker</h2>
@@ -50,12 +43,7 @@
 			<li class="nav-item" role="presentation">
 				<a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#dati" role="tab" aria-controls="pills-profile" aria-selected="false">Dati</a>
 			  </li>
-			  <li class="nav-item" role="presentation">
-				<a class="nav-link " id="pills-colors-tab" data-toggle="pill" href="#colori" role="tab" aria-controls="pills-home" aria-selected="true">Regioni</a>
-			  </li>
-			<li class="nav-item" role="presentation">
-			  <a class="nav-link " id="pills-home-tab" data-toggle="pill" href="#decreti" role="tab" aria-controls="pills-home" aria-selected="true">Normativa</a>
-			</li>
+
 			<li class="nav-item" role="presentation">
 				<a class="nav-link " id="pills-home-tab" data-toggle="pill" href="#app" role="tab" aria-controls="pills-home" aria-selected="true">App</a>
 			</li>
@@ -142,98 +130,9 @@
 	
 			</div>
 
-			<div class="tab-pane fade show" id="colori" role="tabpanel" aria-labelledby="pills-profile-tab">
-
-				<div style="margin-top: 20px;">
-					<h4>Dati aggiornati al 4 marzo 2021</h4>
-
-					<ul class="list-group" style="margin-bottom: 30px;">
-						<?php
-							$db = new Database();
-							$result = $db->query("SELECT * FROM Regioni ORDER BY colore ASC;");
-
-							while($row = mysqli_fetch_array($result)) {
-								$colore = "";
-
-								if($row["colore"] == 'Bianco') {
-									$colore = "light\"";
-								} else if($row["colore"] == 'Giallo') {
-									$colore = "warning\"";
-								} else if($row["colore"] == 'Arancione') {
-									$colore = "\" style=\"background-color: orange;\"";
-								} else {
-									$colore = "danger\"";
-								}
-
-								echo '<li class="list-group-item">' . $row["nome"] . ' <span class="badge badge-' . $colore. '>' . $row["colore"] . '</span></li>';
-							}
-						?>
-					</ul>
-
-					<div id="region-colors"></div>
-				</div>
-				
-
-			</div>
 			
-			<div class="tab-pane fade " id="decreti" role="tabpanel" aria-labelledby="pills-home-tab">
-
-				<div class="row" style="margin-top: 20px;">
-					<div class="col-sm-12">
-						<h2>Prossimo decreto</h2>
-						<div class="list-group-item list-group-item-action" style=" box-shadow: 0 14px 28px #cbd8fd, 0 10px 10px #cbd8fd; border-radius: 10px;">
-							<div class="d-flex w-100 justify-content-between">
-							  <h5 class="mb-1">Decreto marzo</h5>
-							</div>
-							<p class="mb-1">Firma: 02/03/2021</p>
-							<p class="mb-1">Entrata in vigore: 06/03/2021</p>
-							<p class="mb-1">Termine validità: 06/04/2021</p>
-							<a class="mb-1" href="https://www.governo.it/it/articolo/covid-19-il-presidente-draghi-firma-il-nuovo-dpcm/16343" target="_blank">Pagina ufficiale</a>
-						</div>
-					</div>
-				</div>
-		
-				<div class="row" style="margin-top: 20px;">
-					<div class="col-sm-12">
-
-						<div style="margin-top: 20px;">
-							<h2>Consulta database regole</h2>
-							<div>
-								<select class="custom-select" id="region-select" style="margin-top: 10px;">
-									<option selected>Inserisci la tua regione</option>
-									<?php
-										$db = new Database();
-										$result = $db->query("SELECT * FROM Regioni ORDER BY nome ASC;");
-
-										while($row = mysqli_fetch_array($result)) {
-											echo '<option value="' . $row["nome"] . '">' . $row["nome"] . '</option>';
-										}
-									?>
-								</select>
-
-								<select class="custom-select" id="field-select"  style="margin-top: 10px;">
-									<option selected>Scegli un campo</option>
-									<option value="Scuola">Scuola</option>
-									<option value="VisiteAmiciParenti">Visite ad amici e parenti</option>
-									<option value="BarRistoranti">Bar e ristoranti</option>
-									<option value="Negozi">Negozi</option>
-									<option value="Musei">Mostre e musei</option>
-									<option value="Sport">Sport</option>
-								</select>
-
-								<button type="button" onclick="checkRules();" class="btn btn-primary" style="background-color: #5751FF; margin-top: 10px;">Procedi</button>
-
-							</div>
-						</div>
-
-						<div class="alert alert-primary" role="alert" id="search-result" style="margin-top: 20px; display: none;">
-							
-						</div>
-					</div>
-				</div>
-
-
-			</div>
+			
+			
 
 			<div class="tab-pane fade" id="app" role="tabpanel" aria-labelledby="pills-profile-tab">
 
